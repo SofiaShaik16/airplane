@@ -1,0 +1,22 @@
+{
+  "doctype": "Airplane Ticket",
+  "allow_edit": 1,
+  "allow_delete": 0,
+  "login_required": 0,
+  "anonymous": 1,
+  "fields": [
+    {
+      "fieldname": "flight",
+      "fieldtype": "Link",
+      "label": "Flight",
+      "options": "Airplane Flight",
+      "reqd": 1
+    },
+    {
+      "fieldname": "passenger_name",
+      "fieldtype": "Data",
+      "label": "Passenger Name",
+      "reqd": 1
+    }
+  ]
+}

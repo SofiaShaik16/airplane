@@ -19,7 +19,13 @@
   "duration_of_flight",
   "tasks_section",
   "ticket_status",
-  "amended_from"
+  "amended_from",
+  "pricing_status",
+  "flight_price",
+  "add_ons",
+  "total_amount",
+  "seat_no",
+  "seat"
  ],
  "fields": [
   {
@@ -118,13 +124,46 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "pricing_status",
+   "fieldtype": "Section Break",
+   "label": "Pricing"
+  },
+  {
+   "fieldname": "flight_price",
+   "fieldtype": "Currency",
+   "label": "Flight_price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "add_ons",
+   "fieldtype": "Table",
+   "label": "Add_ons",
+   "options": "Airplane Ticket Add-on Item"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seat",
+   "fieldtype": "Data",
+   "label": "Seat"
+  },
+  {
+   "fieldname": "seat_no",
+   "fieldtype": "Column Break",
+   "label": "seat_no"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-04-13 14:46:32.639171",
+ "modified": "2026-04-18 23:55:47.502007",
  "modified_by": "Administrator",
  "module": "Airplane_mode",
  "name": "Airplane Ticket",

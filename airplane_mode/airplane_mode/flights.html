@@ -1,0 +1,11 @@
+<h1>Flights</h1>
+
+{% for f in flights %}
+    <div>
+        <b>{{ f.source_airport }} → {{ f.destination_airport_code }}</b><br>
+        {{ f.date_of_departure }} | {{ f.time_of_departure }}<br>
+        Duration: {{ f.duration }}<br>
+
+        <a href="/{{ f.route }}">View Flight</a>
+    </div>
+{% endfor %}
